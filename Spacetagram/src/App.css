@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Righteous&display=swap");
+
+body {
+  font-family: "Righteous", cursive;
+  color: black;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: rgb(233, 184, 93);
+}
+
+/* navbar ---------- */
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #f59494;
+  transform: scale(1.1);
+}
+
+/* nasa photo ---------- */
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 50%;
+  margin-right: 50px;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.nasa-photo .explanation {
+  color: #252222;
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
+    text-align: center;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .loading {
+    text-align: center;
+  }
+
+  .loader {
+   display: inline-block;
+   text-align: left;
+  }
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  font-size: 40px;
+  background: #f59494;
+  display: inline-block;
+  padding: 40px 80px;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  border-radius: 5px;
+  background: #e77171;
+}
+
+.like-button:hover {
+  cursor: pointer;
+}
+
+.like-button {
+  padding-left: 20px;
+}
+
+.nasa-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-container {
+  display: flex;
+  align-content: space-around;
+  margin-right: 10px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.liked {
+  color: red;
+}
+
+.loader {
+  text-align: center;
+  margin: 300px;
+}
